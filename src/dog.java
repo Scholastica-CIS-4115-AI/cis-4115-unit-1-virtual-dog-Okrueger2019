@@ -157,15 +157,15 @@ public class dog {
      */
     private void updateHappy(Actions currentAction) {
         switch (currentAction) {
-            case PET:								
-            case FEED:								
-                setState(States.SLEEPY); 			
+            case PET:                                   //Pet Dog								
+            case FEED:					//Feed Dog			
+                setState(States.SLEEPY); 		//Dog is now sleepy	
                 break;
-            case WALK:								
-                setState(States.HUNGRY); 			
+            case WALK:					//Walk Dog			
+                setState(States.HUNGRY); 		//Dog is now hungry	
                 break;
-            case IGNORE:							
-                setState(States.SAD);
+            case IGNORE:				//Ignore Dog			
+                setState(States.SAD);                   //Dog is now sad
                 break;
         }
     }
@@ -180,13 +180,13 @@ public class dog {
         switch (currentAction) {
             case PET:
             case FEED:
-                setState(States.HAPPY);
+                setState(States.HAPPY);                 //Dog is now happy
                 break;
             case WALK:
-                setState(States.HUNGRY);
+                setState(States.HUNGRY);                //Dog is now hungry
                 break;
             case IGNORE:
-                setState(States.ANGRY);
+                setState(States.ANGRY);                 //Dog is now angry
                 break;
         }
     }
@@ -201,13 +201,13 @@ public class dog {
         switch (currentAction) {
             case PET:
             case IGNORE:
-                setState(States.ANGRY); 
+                setState(States.ANGRY);                 //Dog is now angry
                 break;
             case WALK:
-                setState(States.HUNGRY);
+                setState(States.HUNGRY);                //Dog is now hungry
                 break;
             case FEED:
-                setState(States.SLEEPY);
+                setState(States.SLEEPY);                //Dog is now sleepy
                 break;
         }
     }
@@ -222,13 +222,13 @@ public class dog {
         switch (currentAction) {
             case PET:
             case WALK:
-                setState(States.HAPPY);
+                setState(States.HAPPY);                 //Dog is now happy
                 break;
             case FEED:
-                setState(States.SLEEPY);
+                setState(States.SLEEPY);                //Dog is now sleepy
                 break;
             case IGNORE:
-                setState(States.ANGRY);
+                setState(States.ANGRY);                 //Dog is now angry
                 break;
         }
     }
@@ -243,13 +243,13 @@ public class dog {
         switch (currentAction) {
             case PET:
             case FEED:
-                setState(States.HAPPY);
+                setState(States.HAPPY);                 //Dog is now happy
                 break;
             case WALK:
-                setState(States.ANGRY);
+                setState(States.ANGRY);                 //Dog is now angry
                 break;
             case IGNORE:
-                setState(States.SLEEPY);
+                setState(States.SLEEPY);                //Dog is now sleepy
                 break;
         }
     }
